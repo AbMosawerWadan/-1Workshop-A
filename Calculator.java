@@ -9,7 +9,7 @@ public class Calculator{
         System.out.print("Enter the Secound Number:");
         int Sn = sc.nextInt();
 
-        System.out.print("Please Enter Your Operator(* , / , + , -)");
+        System.out.print("Please Enter Your Operator(* , / , + , -)--->");
         operator = sc.next().charAt(0);
 
         int  sum = Fn + Sn ;
@@ -17,6 +17,35 @@ public class Calculator{
         Double Division = (double)(Fn / Sn);
         int substraction = Fn - Sn;
         
+
+        switch(operator){
+            case ('+'):
+            System.out.print("The sum is ="+sum);
+            break;
+            
+            case ('-'):
+            System.out.println("The substraction = "+substraction);
+            break;
+
+            case ('/'):
+            System.out.println("The Division is = "+Division);
+            break;
+
+            case ('*'):
+            System.out.println("The Product is = " +product);
+            break;
+            default:
+            System.out.println("Error!!!");
+        }    
+
+
+
+
+
+
+
+
+
 
     }
 }

@@ -14,7 +14,10 @@ public class Calculator{
 
         int  sum = Fn + Sn ;
         int  product = Fn * Sn;
-        Double Division = (double)(Fn / Sn);
+        double Division = 0;
+        if(Sn != 0){
+            Division = (double) (Fn / Sn);
+        }
         int substraction = Fn - Sn;
         
 
@@ -28,7 +31,13 @@ public class Calculator{
             break;
 
             case ('/'):
+            if(Sn  == 0){
+                System.out.println("You cant divide (0 / 0)!");
+            }
+            else
+            {
             System.out.println("The Division is = "+Division);
+            }
             break;
 
             case ('*'):
@@ -37,13 +46,6 @@ public class Calculator{
             default:
             System.out.println("Error!!!");
         }    
-
-
-
-
-
-
-
 
 
 
